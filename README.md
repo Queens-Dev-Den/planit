@@ -14,6 +14,29 @@ This is an events app where you can see current and future events. Some events a
 - npm (Node Package Manager)
 - MySQL
 
+### Backend
+1. Navigate to the `backend` folder:
+    ```sh
+    cd backend
+    ```
+2. Install dependencies:
+    ```sh
+    npm install
+    ```
+3. Create a `.env` file in the `backend` directory with the following content:
+    ```plaintext
+    DB_NAME=your_database_name
+    DB_USER=your_database_user
+    DB_PASSWORD=your_database_password
+    DB_HOST=127.0.0.1
+    PORT=3001
+    ```
+4. Ensure your MySQL server is running and the database specified in `DB_NAME` exists.
+5. Start the backend server:
+    ```sh
+    node src/index.js
+    ```
+
 ### Frontend
 1. Navigate to the `frontend` folder:
     ```sh
@@ -23,21 +46,7 @@ This is an events app where you can see current and future events. Some events a
     ```sh
     npm install
     ```
-3. Start the development server:
-    ```sh
-    npm start
-    ```
-
-### Backend
-1. Navigate to the [backend](http://_vscodecontentref_/1) folder:
-    ```sh
-    cd backend
-    ```
-2. Install dependencies:
-    ```sh
-    npm install
-    ```
-3. Start the server:
+3. Start the frontend development server:
     ```sh
     npm start
     ```
