@@ -1,4 +1,4 @@
-.login-page {
+.signup-page {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@
     left: 20px;
 }
   
-.login-form {
+.signup-form {
     background: white;
     padding: 20px;
     border-radius: 8px;
@@ -22,7 +22,7 @@
     width: 400px;
 }
   
-.login-form h2 {
+.signup-form h2 {
     margin-bottom: 20px;
     margin-top: 15px;
     font-size: 30px;
@@ -96,17 +96,17 @@ input {
     font-size: 14px;
 }
 
-.signup-text {
+.login-text {
     margin-top: 40px;
     font-size: 16px;
     font-weight: 400;
 }
   
-.signup-link {
+.login-link {
     color: #007bff;
     text-decoration: none;
 }
   
-.signup-link:hover {
+.login-link:hover {
     text-decoration: underline;
 }
