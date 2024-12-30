@@ -1,9 +1,6 @@
 // Import the express library to create the server
 const express = require('express');
 
-// Import the database connection from db.js
-const db = require('./db');
-
 // Import body-parser to parse JSON request bodies
 const bodyParser = require('body-parser');
 
@@ -24,8 +21,8 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-// Define a route to add a new user
-app.use(userRoutes);
+// Use the user routes with the /api prefix
+app.use('/api', userRoutes);
 
 // Start the server and listen on the specified port
 app.listen(port, () => {
