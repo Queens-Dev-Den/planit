@@ -5,6 +5,7 @@ import SignupPage from './pages/SignupPage';
 import HomePage from './pages/HomePage';
 import './App.css';
 import ProtectedRoute from './components/ProtectedRoute';
+import AlreadyLoggedIn from './components/AlreadyLoggedIn';
 
 const App = () => {
   const isAuthenticated = () => {
@@ -14,8 +15,18 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/login" element={
+          <AlreadyLoggedIn>
+            <LoginPage />
+          </AlreadyLoggedIn>
+          } 
+        />
+        <Route path="/signup" element={
+          <AlreadyLoggedIn>
+            <SignupPage />
+          </AlreadyLoggedIn>
+          } 
+        />
         <Route
           path="/"
           element={
