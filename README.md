@@ -74,7 +74,11 @@ This is an events app where you can see current and future events. Some events a
     ```sh
     npm install
     ```
-3. Start the development server:
+3. Create a `.env` file in the [frontend](http://_vscodecontentref_/3) directory with the following content:
+    ```plaintext
+    REACT_APP_BACKEND_SERVER_URL=http://localhost:3001
+    ```
+4. Start the frontend development server:
     ```sh
     npm start
     ```

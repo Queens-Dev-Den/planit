@@ -11,7 +11,7 @@ const SignupPage = () => {
     const [showPassword2, setShowPassword2] = useState(false);
     const [error, setError] = useState('');
     const [success, setSuccess] = useState('');
-    const navigate = useNavigate(); // Get the history instance
+    const navigate = useNavigate(); // Get the navigate function
   
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -21,7 +21,7 @@ const SignupPage = () => {
         }
 
         try {
-            const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/users`, {
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_SERVER_URL}/api/users`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ const SignupPage = () => {
             if (response.ok) {
                 setSuccess('User created successfully');
                 setError('');
-                navigate('/login');
+                navigate('/login'); // Redirect to the login page
             } else {
                 const data = await response.json();
                 setError(data.error || 'Failed to create user');
