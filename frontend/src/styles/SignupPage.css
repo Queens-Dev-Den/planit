@@ -110,3 +110,7 @@ input {
 .login-link:hover {
     text-decoration: underline;
 }
+
+.error {
+    color: rgb(208, 0, 0);
+}

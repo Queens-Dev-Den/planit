@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../styles/SignupPage.css'
 
 const SignupPage = () => {
@@ -9,10 +9,39 @@ const SignupPage = () => {
     const [showPassword, setShowPassword] = useState(false);
     const [password2, setPassword2] = useState('');
     const [showPassword2, setShowPassword2] = useState(false);
+    const [error, setError] = useState('');
+    const [success, setSuccess] = useState('');
+    const navigate = useNavigate(); // Get the history instance
   
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      // Dummy data integration will be added later
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        if (password !== password2) {
+            setError('Passwords do not match');
+            return;
+        }
+
+        try {
+            const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/users`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email, username, password }),
+            });
+
+            if (response.ok) {
+                setSuccess('User created successfully');
+                setError('');
+                navigate('/login');
+            } else {
+                const data = await response.json();
+                setError(data.error || 'Failed to create user');
+                setSuccess('');
+            }
+        } catch (error) {
+            setError('Failed to create user');
+            setSuccess('');
+        }
     };
 
     return (
@@ -20,6 +49,8 @@ const SignupPage = () => {
             <img src="planit-full-logo.png" className='planit-full-logo' alt="planit logo" />
             <form className='signup-form' onSubmit={handleSubmit}>
                 <h2>Sign Up</h2>
+                {error && <p className="error">{error}</p>}
+                {success && <p className="success">{success}</p>}
                 <div className='input-group'>
                     <label htmlFor='email'>Email</label>
                     <input
