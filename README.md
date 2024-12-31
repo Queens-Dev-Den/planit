@@ -14,8 +14,59 @@ This is an events app where you can see current and future events. Some events a
 - npm (Node Package Manager)
 - MySQL
 
+### Backend
+1. Navigate to the `backend` folder:
+    ```sh
+    cd backend
+    ```
+2. Install dependencies:
+    ```sh
+    npm install
+    ```
+3. Create a `.env` file in the `backend` directory with the following content:
+    ```plaintext
+    DB_NAME=(database_name)
+    DB_USER=(your_username)
+    DB_PASSWORD=(your_password)
+    DB_HOST=127.0.0.1
+    PORT=3001
+    ```
+4. Ensure your MySQL server is running and the database specified in `DB_NAME` exists.
+5. Create the database and user:
+    1. Open Command Prompt/Terminal as Administrator:
+        - Press `Win + X` and select "Command Prompt (Admin)" or "Windows PowerShell (Admin)".
+    2. Log into MySQL:
+        ```sh
+        mysql -u root -p
+        ```
+        Enter the root password you set during the installation.
+    3. Create the database:
+        ```sql
+        CREATE DATABASE planit;
+        ```
+    4. Create the user:
+        ```sql
+        CREATE USER 'your_username'@'localhost' IDENTIFIED BY 'your_password';
+        ```
+    5. Grant permissions:
+        ```sql
+        GRANT ALL PRIVILEGES ON planit.* TO 'your_username'@'localhost';
+        ```
+    6. Flush privileges:
+        ```sql
+        FLUSH PRIVILEGES;
+        ```
+    7. Exit MySQL:
+        ```sql
+        EXIT;
+        ```
+6. Start the backend server:
+    ```sh
+    node src/index.js
+    ```
+
 ### Frontend
-1. Navigate to the `frontend` folder:
+1. Navigate to the [frontend](http://_vscodecontentref_/0) folder:
     ```sh
     cd frontend
     ```
@@ -28,20 +79,7 @@ This is an events app where you can see current and future events. Some events a
     npm start
     ```
 
-### Backend
-1. Navigate to the [backend](http://_vscodecontentref_/1) folder:
-    ```sh
-    cd backend
-    ```
-2. Install dependencies:
-    ```sh
-    npm install
-    ```
-3. Start the server:
-    ```sh
-    npm start
-    ```
-
+This should set up your environment for the first time and get both the backend and frontend servers running.
 ## Usage
 - Access the frontend at `http://localhost:3000`.
 - The backend server runs at `http://localhost:3001`.
