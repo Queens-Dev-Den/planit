@@ -4,6 +4,7 @@ import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import HomePage from './pages/HomePage';
 import './App.css';
+import ProtectedRoute from './components/ProtectedRoute';
 
 const App = () => {
   const isAuthenticated = () => {
@@ -17,7 +18,11 @@ const App = () => {
         <Route path="/signup" element={<SignupPage />} />
         <Route
           path="/"
-          element={isAuthenticated() ? <HomePage /> : <Navigate to="/login" />}
+          element={
+            <ProtectedRoute>
+              <HomePage />
+            </ProtectedRoute>
+          }
         />
       </Routes>
     </Router>

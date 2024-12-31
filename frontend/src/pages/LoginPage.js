@@ -1,15 +1,39 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import '../styles/LoginPage.css'
+import { Link, useNavigate } from 'react-router-dom';
+import '../styles/LoginPage.css';
 
 const LoginPage = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
-  
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      // Dummy data integration will be added later
+    const [error, setError] = useState('');
+    const navigate = useNavigate(); // Get the navigate function
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_SERVER_URL}/api/users/login`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email, password }),
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                // Store the authentication token (e.g., in localStorage)
+                localStorage.setItem('authToken', data.token);
+                setError('');
+                navigate('/'); // Redirect to the home page
+            } else {
+                const data = await response.json();
+                setError(data.error || 'Failed to login');
+            }
+        } catch (error) {
+            setError('Failed to login');
+        }
     };
 
     return (
@@ -17,6 +41,7 @@ const LoginPage = () => {
             <img src="planit-full-logo.png" className='planit-full-logo' alt="planit logo" />
             <form className='login-form' onSubmit={handleSubmit}>
                 <h2>Login</h2>
+                {error && <p className="error">{error}</p>}
                 <div className='input-group'>
                     <label htmlFor='email'>Email</label>
                     <input

@@ -30,6 +30,7 @@ This is an events app where you can see current and future events. Some events a
     DB_PASSWORD=(your_password)
     DB_HOST=127.0.0.1
     PORT=3001
+    JWT_SECRET=(your_jwt_secret)
     ```
 4. Ensure your MySQL server is running and the database specified in `DB_NAME` exists.
 5. Create the database and user:
