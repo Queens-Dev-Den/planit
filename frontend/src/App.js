@@ -4,8 +4,9 @@ import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import HomePage from './pages/HomePage';
 import './App.css';
-import ProtectedRoute from './components/ProtectedRoute';
-import AlreadyLoggedIn from './components/AlreadyLoggedIn';
+import ProtectedRoute from './components/routing/ProtectedRoute';
+import AlreadyLoggedIn from './components/routing/AlreadyLoggedIn';
+import Layout from './components/layout/Layout';
 
 const App = () => {
   const isAuthenticated = () => {
@@ -31,7 +32,9 @@ const App = () => {
           path="/"
           element={
             <ProtectedRoute>
-              <HomePage />
+              <Layout>
+                <HomePage/>
+              </Layout>
             </ProtectedRoute>
           }
         />

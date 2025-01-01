@@ -1,0 +1,61 @@
+.navbar {
+    background: #f0f0f0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Position it at the top */
+    width: 100%; /* Make it span the full width */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1500px;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.navbar-logo {
+    justify-self: start;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.nav-item {
+    height: 25px;
+    cursor: pointer;
+}
+
+.logout-button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #4e4e4e;
+}
+
+.logout-button:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.planit-navbar-logo {
+    height: 40px;
+}
