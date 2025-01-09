@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import './Navbar.css';
 
@@ -11,6 +11,14 @@ const Navbar = () => {
         navigate('/login');
     };
 
+    const navigateHome = () => {
+        navigate('/');
+    };
+
+    const navigateCreate = () => {
+        navigate('/create');
+    }
+
     return (
         <nav className="navbar">
             <div className="navbar-container">
@@ -19,7 +27,13 @@ const Navbar = () => {
                 </Link>
                 <ul className='nav-menu'>
                     <li className="nav-item">
-                        <button onClick={handleLogout} className='logout-button'>Logout</button>
+                        <button onClick={navigateHome} className='nav-button'>Home</button>
+                    </li>
+                    <li className="nav-item">
+                        <button onClick={navigateCreate} className='nav-button'>New Event</button>
+                    </li>
+                    <li className="nav-item">
+                        <button onClick={handleLogout} className='nav-button'>Logout</button>
                     </li>
                 </ul>
             </div>
