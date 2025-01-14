@@ -39,21 +39,32 @@
 }
 
 .nav-item {
-    height: 1.5em;
     cursor: pointer;
 }
 
 .nav-button {
     border: none;
     background: none;
-    font-size: 0.75em;
+    font-size: 0.6em;
     font-weight: 600;
     cursor: pointer;
     color: #4e4e4e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2em;
 }
 
 .nav-button:hover {
     color: black;
+}
+
+.nav-button.active {
+    color: black;
+}
+
+.nav-icon {
+    font-size: 2.5em;
 }
 
 .planit-navbar-logo {
