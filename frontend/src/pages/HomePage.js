@@ -1,18 +1,23 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import '../styles/HomePage.css';
+import ListedEvent from '../components/homepage/ListedEvent';
+import OpenEvent from '../components/homepage/OpenEvent';
 
 const HomePage = () => {
-  const navigate = useNavigate();
-
-  const handleLogout = () => {
-    localStorage.removeItem('authToken');
-    navigate('/login');
-  };
-
   return (
     <div>
-      <h1>Welcome to the Home Page!</h1>
-      <button onClick={handleLogout}>Logout</button>
+      <h1>Home Page</h1>
+      <div className='homepage-content'>
+        <div className='listed-events'>
+          <ListedEvent />
+          <ListedEvent />
+          <ListedEvent /> 
+          <ListedEvent />
+          <ListedEvent />
+          <ListedEvent />
+        </div>
+        <OpenEvent />
+      </div>
     </div>
   );
 };
