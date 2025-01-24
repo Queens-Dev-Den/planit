@@ -1,9 +1,11 @@
 import './OpenEvent.css';
 
-export default function OpenEvent({ }) {
+export default function OpenEvent({ event }) {
     return (
       <div className="open-event">
-          <p>Open Event Name</p> 
+          <p>{event.title}</p> 
+          <p>{event.date}</p>
+          <p>{event.description}</p>
       </div>
     );
   }

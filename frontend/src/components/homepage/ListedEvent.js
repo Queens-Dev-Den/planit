@@ -1,11 +1,11 @@
 import './ListedEvent.css';
 import React from 'react';
 
-export default function ListedEvent({ }) {
+export default function ListedEvent({ event, onClick, selected }) {
     return (
-      <div className="listed-event">
-          <p>Event Name</p>
-          <p>Event Date</p>
+      <div className={`listed-event ${selected ? 'selected-event' : ''}`} onClick={onClick}>
+          <p>{event.title}</p>
+          <p>{event.date} at {event.time}</p>
       </div>
     );
   }

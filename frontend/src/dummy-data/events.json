@@ -1,0 +1,119 @@
+[
+    {
+        "id": 1,
+        "title": "Team Meeting",
+        "description": "Monthly team meeting to discuss project updates and milestones.",
+        "date": "2023-11-01",
+        "time": "10:00 AM",
+        "location": "Conference Room A",
+        "organizer": "John Doe"
+    },
+    {
+        "id": 2,
+        "title": "Product Launch",
+        "description": "Launch event for the new product line.",
+        "date": "2023-11-15",
+        "time": "2:00 PM",
+        "location": "Main Auditorium",
+        "organizer": "Jane Smith"
+    },
+    {
+        "id": 3,
+        "title": "Client Presentation",
+        "description": "Presentation to potential clients about our services.",
+        "date": "2023-11-20",
+        "time": "11:00 AM",
+        "location": "Conference Room B",
+        "organizer": "Alice Johnson"
+    },
+    {
+        "id": 4,
+        "title": "Workshop: Web Development",
+        "description": "A hands-on workshop on modern web development practices.",
+        "date": "2023-11-25",
+        "time": "9:00 AM",
+        "location": "Lab 3",
+        "organizer": "Bob Brown"
+    },
+    {
+        "id": 5,
+        "title": "Annual Company Party",
+        "description": "End of year celebration for all employees.",
+        "date": "2023-12-10",
+        "time": "6:00 PM",
+        "location": "Banquet Hall",
+        "organizer": "HR Department"
+    },
+    {
+        "id": 6,
+        "title": "Board Meeting",
+        "description": "Quarterly board meeting to discuss company performance.",
+        "date": "2023-12-05",
+        "time": "3:00 PM",
+        "location": "Conference Room A",
+        "organizer": "CEO"
+    },
+    {
+        "id": 7,
+        "title": "Marketing Strategy Session",
+        "description": "Brainstorming session for the new marketing strategy.",
+        "date": "2023-12-12",
+        "time": "1:00 PM",
+        "location": "Conference Room B",
+        "organizer": "Marketing Team"
+    },
+    {
+        "id": 8,
+        "title": "Sales Training",
+        "description": "Training session for the sales team.",
+        "date": "2023-12-15",
+        "time": "10:00 AM",
+        "location": "Training Room",
+        "organizer": "Sales Manager"
+    },
+    {
+        "id": 9,
+        "title": "Tech Talk: AI in 2023",
+        "description": "A talk on the latest advancements in AI.",
+        "date": "2023-12-20",
+        "time": "4:00 PM",
+        "location": "Main Auditorium",
+        "organizer": "Tech Team"
+    },
+    {
+        "id": 10,
+        "title": "Holiday Party",
+        "description": "Annual holiday party for all employees.",
+        "date": "2023-12-22",
+        "time": "7:00 PM",
+        "location": "Banquet Hall",
+        "organizer": "HR Department"
+    },
+    {
+        "id": 11,
+        "title": "Customer Feedback Session",
+        "description": "Session to gather feedback from key customers.",
+        "date": "2023-12-28",
+        "time": "2:00 PM",
+        "location": "Conference Room A",
+        "organizer": "Customer Relations"
+    },
+    {
+        "id": 12,
+        "title": "New Year Kickoff",
+        "description": "Kickoff meeting to start the new year with goals and plans.",
+        "date": "2024-01-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Executive Team"
+    },
+    {
+        "id": 13,
+        "title": "Ski Function",
+        "description": "Skiing n stuff",
+        "date": "2025-07-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Me lol"
+    }
+]
