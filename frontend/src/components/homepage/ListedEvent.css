@@ -43,6 +43,41 @@
 }
 
 .selected-event {
-    outline: 0.2em solid #0da0c5;
     transition: 0.1s ease-in-out;
+    background-color: #0da0c5;
+    color: white;
+    border: 0.0625em solid rgba(0, 0, 0, 0);
+}
+
+.listed-event-item {
+    display: flex;
+    gap: 0.5em;
+}
+
+.listed-event-item p {
+    margin: 0.5em 0;
+    font-size: 0.9em;
+}
+
+.event-title {
+    font-weight: 900;
+    font-size: 1.1em;
+    color: #0da0c5;
+    margin: 0.3em 0;
+}
+
+.selected-event .listed-event-item {
+    color: white;
+}
+
+.event-item-key {
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.event-location, .event-time, .event-organizer, .event-title{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
 }

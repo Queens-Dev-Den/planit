@@ -48,7 +48,7 @@
     font-size: 0.6em;
     font-weight: 600;
     cursor: pointer;
-    color: #4e4e4e;
+    color: rgb(90, 90, 90);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,7 +62,7 @@
 }
 
 .nav-button.active {
-    color: black;
+    color: #0da0c5;
 }
 
 .nav-button.active::after {
@@ -73,7 +73,7 @@
     transform: translateX(-50%);
     width: 6em;
     height: 0.2em;
-    background-color: black;
+    background-color: #0da0c5;
 }
 
 .nav-icon {
