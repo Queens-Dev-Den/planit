@@ -13,25 +13,27 @@ const Navbar = () => {
         navigate('/login');
     };
 
-    const navigateHome = () => {
-        navigate('/');
-    };
-
     const navigateCreate = () => {
         navigate('/create');
     }
+
+    const handleHomeClick = (e) => {
+        e.preventDefault();
+        navigate('/');
+        window.location.reload();
+    };
 
     const location = useLocation();
 
     return (
         <nav className="navbar">
             <div className="navbar-container">
-                <Link to="/" className="navbar-logo">
+            <Link to="/" className="navbar-logo" onClick={handleHomeClick}>
                     <img src="planit-full-logo.png" className='planit-navbar-logo' alt="planit logo" />
                 </Link>
                 <ul className='nav-menu'>
                     <li className="nav-item">
-                        <button onClick={navigateHome} className={`nav-button ${location.pathname === '/' ? 'active' : ''}`}>
+                        <button onClick={handleHomeClick} className={`nav-button ${location.pathname === '/' ? 'active' : ''}`}>
                             <PiHouseFill className="nav-icon" />
                             Home
                         </button>

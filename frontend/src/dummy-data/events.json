@@ -91,12 +91,12 @@
     },
     {
         "id": 11,
-        "title": "Customer Feedback Session bruh bruh bruh bruh bruh",
+        "title": "Customer Feedback Session bruh bruh bruhz",
         "description": "Session to gather feedback from key customers.",
         "date": "2023-12-28",
-        "time": "2:0000000000000000000000000000000 PM",
-        "location": "Conference Room A bruh bruh bruh bruh",
-        "organizer": "Customer Relations bruh bruh bruh bruh bruh"
+        "time": "2:00 PM",
+        "location": "Conference Room A",
+        "organizer": "Customer Relations"
     },
     {
         "id": 12,
@@ -109,6 +109,262 @@
     },
     {
         "id": 13,
+        "title": "Ski Function",
+        "description": "Skiing n stuff",
+        "date": "2025-07-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Me lol"
+    },
+    {
+        "id": 14,
+        "title": "New Year Kickoff",
+        "description": "Kickoff meeting to start the new year with goals and plans.",
+        "date": "2024-01-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Executive Team"
+    },
+    {
+        "id": 15,
+        "title": "Ski Function",
+        "description": "Skiing n stuff",
+        "date": "2025-07-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Me lol"
+    },{
+        "id": 16,
+        "title": "New Year Kickoff",
+        "description": "Kickoff meeting to start the new year with goals and plans.",
+        "date": "2024-01-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Executive Team"
+    },
+    {
+        "id": 17,
+        "title": "Ski Function",
+        "description": "Skiing n stuff",
+        "date": "2025-07-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Me lol"
+    },{
+        "id": 18,
+        "title": "New Year Kickoff",
+        "description": "Kickoff meeting to start the new year with goals and plans.",
+        "date": "2024-01-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Executive Team"
+    },
+    {
+        "id": 19,
+        "title": "Ski Function",
+        "description": "Skiing n stuff",
+        "date": "2025-07-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Me lol"
+    },{
+        "id": 20,
+        "title": "New Year Kickoff",
+        "description": "Kickoff meeting to start the new year with goals and plans.",
+        "date": "2024-01-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Executive Team"
+    },
+    {
+        "id": 21,
+        "title": "Ski Function",
+        "description": "Skiing n stuff",
+        "date": "2025-07-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Me lol"
+    },{
+        "id": 22,
+        "title": "New Year Kickoff",
+        "description": "Kickoff meeting to start the new year with goals and plans.",
+        "date": "2024-01-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Executive Team"
+    },
+    {
+        "id": 23,
+        "title": "Ski Function",
+        "description": "Skiing n stuff",
+        "date": "2025-07-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Me lol"
+    },{
+        "id": 24,
+        "title": "New Year Kickoff",
+        "description": "Kickoff meeting to start the new year with goals and plans.",
+        "date": "2024-01-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Executive Team"
+    },
+    {
+        "id": 25,
+        "title": "Ski Function",
+        "description": "Skiing n stuff",
+        "date": "2025-07-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Me lol"
+    },{
+        "id": 26,
+        "title": "New Year Kickoff",
+        "description": "Kickoff meeting to start the new year with goals and plans.",
+        "date": "2024-01-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Executive Team"
+    },
+    {
+        "id": 27,
+        "title": "Ski Function",
+        "description": "Skiing n stuff",
+        "date": "2025-07-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Me lol"
+    },{
+        "id": 28,
+        "title": "New Year Kickoff",
+        "description": "Kickoff meeting to start the new year with goals and plans.",
+        "date": "2024-01-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Executive Team"
+    },
+    {
+        "id": 29,
+        "title": "Ski Function",
+        "description": "Skiing n stuff",
+        "date": "2025-07-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Me lol"
+    },{
+        "id": 30,
+        "title": "New Year Kickoff",
+        "description": "Kickoff meeting to start the new year with goals and plans.",
+        "date": "2024-01-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Executive Team"
+    },
+    {
+        "id": 31,
+        "title": "Ski Function",
+        "description": "Skiing n stuff",
+        "date": "2025-07-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Me lol"
+    },{
+        "id": 32,
+        "title": "New Year Kickoff",
+        "description": "Kickoff meeting to start the new year with goals and plans.",
+        "date": "2024-01-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Executive Team"
+    },
+    {
+        "id": 33,
+        "title": "Ski Function",
+        "description": "Skiing n stuff",
+        "date": "2025-07-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Me lol"
+    },{
+        "id": 34,
+        "title": "New Year Kickoff",
+        "description": "Kickoff meeting to start the new year with goals and plans.",
+        "date": "2024-01-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Executive Team"
+    },
+    {
+        "id": 35,
+        "title": "Ski Function",
+        "description": "Skiing n stuff",
+        "date": "2025-07-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Me lol"
+    },{
+        "id": 36,
+        "title": "New Year Kickoff",
+        "description": "Kickoff meeting to start the new year with goals and plans.",
+        "date": "2024-01-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Executive Team"
+    },
+    {
+        "id": 37,
+        "title": "Ski Function",
+        "description": "Skiing n stuff",
+        "date": "2025-07-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Me lol"
+    },{
+        "id": 38,
+        "title": "New Year Kickoff",
+        "description": "Kickoff meeting to start the new year with goals and plans.",
+        "date": "2024-01-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Executive Team"
+    },
+    {
+        "id": 39,
+        "title": "Ski Function",
+        "description": "Skiing n stuff",
+        "date": "2025-07-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Me lol"
+    },{
+        "id": 40,
+        "title": "New Year Kickoff",
+        "description": "Kickoff meeting to start the new year with goals and plans.",
+        "date": "2024-01-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Executive Team"
+    },
+    {
+        "id": 41,
+        "title": "Ski Function",
+        "description": "Skiing n stuff",
+        "date": "2025-07-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Me lol"
+    },{
+        "id": 42,
+        "title": "New Year Kickoff",
+        "description": "Kickoff meeting to start the new year with goals and plans.",
+        "date": "2024-01-02",
+        "time": "9:00 AM",
+        "location": "Main Auditorium",
+        "organizer": "Executive Team"
+    },
+    {
+        "id": 43,
         "title": "Ski Function",
         "description": "Skiing n stuff",
         "date": "2025-07-02",
